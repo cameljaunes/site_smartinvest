@@ -1,0 +1,43 @@
+CodeQ;CodeInfo;NomQ;NbHab;CP;NbPolice;NbBar;NbResto;;;;;
+1;1;Capitole;6848;31000;0;87;58;CP;nbHab;nbPolice;nbBar;nbResto
+2;2;Les Carmes;6127;31000;0;75;50;31000;70893;1;478;315
+3;3;Arnaud Bernard;8639;31000;0;32;21;31100;64895;2;95;178
+4;4;Saint-Georges;4006;31000;0;76;50;31200;93008;2;38;123
+5;5;Saint-Étienne;4991;31000;1;6;4;31300;67863;1;143;129
+6;6;Les Amidonniers;7364;31000;0;54;35;31400;72081;1;118;73
+7;7;Compans-Caffarelli;9324;31000;0;66;44;31500;83977;2;73;93
+8;8;Les Chalets;6916;31000;0;25;16;;;;;
+9;9;Matabiau;7610;31000;0;39;26;;;;;
+10;10;Saint-Aubin/Dupuy;9068;31000;1;17;11;;;;;
+11;11;Saint-Martin-du-Touch;4345;31100;0;7;14;;;;;
+12;12;Purpan;8287;31100;0;7;13;;;;;
+13;13;Lardenne;7693;31100;0;2;4;;;;;
+14;14;Pradettes;6582;31100;0;17;32;;;;;
+15;15;Basso-Cambo;2810;31100;0;17;32;;;;;
+16;16;Mirail-Université;4381;31100;0;12;23;;;;;
+17;17;Reynerie;8271;31100;0;4;7;;;;;
+18;18;Bellefontaine;7519;31100;1;13;23;;;;;
+19;19;Saint-Simon;9315;31100;0;13;25;;;;;
+20;20;Lafourguette;5692;31100;0;3;5;;;;;
+21;21;Barrière-de-Paris;35112;31200;1;7;22;;;;;
+22;22;Minimes;17328;31200;0;14;45;;;;;
+23;23;Lalande - Sept Deniers - Croix-Daurade;19391;31200;0;17;55;;;;;
+24;24;Les Izards-Trois Cocus;21177;31200;1;0;1;;;;;
+25;25;Saint-Cyprien;4540;31300;0;24;22;;;;;
+26;26;Patte d'Oie;10431;31300;0;19;17;;;;;
+27;27;Fer à Cheval;3358;31300;0;5;4;;;;;
+28;28;Croix de Pierre;6599;31300;0;3;3;;;;;
+29;29;Fer à Cheval;2872;31300;1;11;10;;;;;
+30;30;Arènes;4529;31300;0;20;18;;;;;
+31;31;Bagatelle;5032;31300;0;2;2;;;;;
+32;32;Fontaine-Lestang;2743;31300;0;19;17;;;;;
+33;33;La Faourette;3360;31300;0;0;0;;;;;
+34;34;La Cépière;3893;31300;0;14;13;;;;;
+35;35;Papus;5791;31300;0;2;1;;;;;
+36;36;Casselardit;12679;31300;0;16;14;;;;;
+37;37;La Cépière;2036;31300;0;9;8;;;;;
+38;38;Rangueil - Sauzelong - Pech-David - Pouvourville;35777;31400;0;89;55;;;;;
+39;39;Saint-Michel - Le Busca - Empalot - Saint Agne;36304;31400;1;29;18;;;;;
+40;40;Bonnefoy - Marengo-Jolimont;22358;31500;1;20;25;;;;;
+41;41;Gramont - Juncasse-Argoulets - Roseraie - Soupetard;32754;31500;0;41;52;;;;;
+42;42;Côté Pavée - Pont des Demoiselles - Montaudran;28865;31500;1;12;16;;;;;

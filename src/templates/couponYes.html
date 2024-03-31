@@ -1,0 +1,83 @@
+{% extends "index.html" %}
+{% block body %}
+    <body>
+    <a class="navbar-brand" href="index"><img style="height: 13%;" src="static/images/SmartInvest.png" alt="Logo"></a>
+      <section id="coupon-message" class="page-section bg-ligth">
+        <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <h2 class="mt-0" > Vous y êtes presque, {{ nom }} ... </h2>
+                        <hr class="divider mb-5" />
+                        <h3> Félicitations, vous avez trouvé votre bonheur avec le bien n°{{codeB}}</h3>
+                          <p style="color: #198754;"> Nous sommes ravi de vous avoir aidé. Vous pouvez désormais contacter le référent du bien via la zone de texte ci dessous. Il vous guidera pour la suite des démarches.</br><br>
+                            
+                           
+                            <br> 
+
+                            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div >
+
+                        <div class="col-lg-8 mt-5">
+              <p>Merci de bien vouloir noter le bien que nous avons trouvé pour vous : </p>
+              <br><br><br>
+              <form action="recupNote" methods="get, post">
+
+              
+              <style>
+                .radio-option {
+                    display: inline-block;
+                    margin-right: 10px; /* Espace entre les options */
+                }
+            </style>
+            Note : 
+            
+            <div class="radio-option">
+                <label><input type="radio" name="note" value="1" required /> 1</label>
+            </div>
+            <div class="radio-option">
+                <label><input type="radio" name="note" value="2" required /> 2</label>
+            </div>
+            <div class="radio-option">
+                <label><input type="radio" name="note" value="3" required /> 3</label>
+            </div>
+            <div class="radio-option">
+                <label><input type="radio" name="note" value="4" required /> 4</label>
+            </div>
+            <div class="radio-option">
+                <label><input type="radio" name="note" value="5" required /> 5</label>
+            </div>
+            <br><br>
+            <input type="submit"/>
+              </form></br>
+            </div>
+                        <!-- <form id="inscriptionForm" data-sb-form-api-token="API_TOKEN">
+                            Name input
+                            <div class="form-floating mb-3">
+                                
+                                <textarea class="form-control" id="message" type="text" style="height: 10rem" ></textarea>
+                            </div>
+                           
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder text-bg-success ">Votre message a été transmis...MERCI et à bientôt sur Smart Invest !</div>
+                                </div>
+                            </div>
+                             Submit error message
+                            
+                             This is what your users will see when there is
+                             an error submitting the form
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                             Submit Button
+                            <div class="d-grid justify-content-center"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Envoyer</button></div>
+                        </form>
+                    </div> -->
+                </div> 
+                          
+                     </div>   
+                   </div>  
+      </section>
+        
+</div></section></div></section></body>
+
+      
+{% endblock %}

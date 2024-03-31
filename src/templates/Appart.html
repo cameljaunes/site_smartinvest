@@ -1,0 +1,84 @@
+{% extends "index.html" %}
+{% block body %}
+    <body>
+           <!------------------------------------- Navigation --------------------------------------------------->
+           <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            
+            <div class="container px-2 px-lg-2">
+                
+                <a class="navbar-brand" ><img class="logo" src="static/images/SmartInvest.png" alt="Logo"></a>
+                
+                        
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a class="nav-link" href="/index">Retour à la page d'accueil</a></li>
+
+                  <li class="nav-item"><a class="nav-link" href="/connection">Déconnexion</a></li>
+              </ul>                       
+            </div>
+        </nav>
+        <br><br><br><br>
+      <section class="page-section">        
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-lg-8 text-center mb-3">
+                  <h5 class="mt-0">Nous vous proposons le bien n°{{lignes[0][8]}}, {{ nom }} : </h5>
+                  <h2 class="mt-3 ">{{ lignes[0][5] }} T{{ lignes[0][0] }} à {{ lignes[0][1] }}</h2>
+                  <!--{{ lignes }}-->
+                  <hr class="divider" />         
+              </div>
+              
+              <div class="col-lg-6">
+                  <iframe src="{{url_iframe}}" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              
+
+                  <div class="col-lg-6 text-center">
+                                        
+                      <p class="mt-3"> 
+                          <strong>Prix : </strong> {{lignes[0][3]}} € <br>
+                          <strong>Surface : </strong> {{lignes[0][2]}}m² <br>
+                          <strong>Nombre de pièce : </strong>  {{lignes[0][0]}} <br>
+                          <!--Autre : Jardin & 2 places de parking <br>-->
+                          <strong>Quartier : </strong> {{lignes[0][1]}}<br>
+                          <strong>Adresse : </strong> {{lignes[0][4]}}<br><br>
+
+                          <u>Contact</u> : {{lignes[0][6]}} | +33{{lignes[0][7]}} <br> <br> </p>
+                  </div>
+
+              <div class="col-lg-8 text-center mt-5">
+                <h5 class="mt-3 mb-3 h5"> <u>Comparer notre offre avec vos critères </u></h5>
+              </div>
+
+              <div class="col-lg-6">
+                <h5> Surface : </h5>
+                  <img class="imgAppart" src="{{ graphique_surface }}" width="100%">
+              </div>
+              <div class="col-lg-6">
+                <h5> Prix : </h5>
+                  <img class="imgAppart" src="{{ graphique_prix }}" width="100%">
+              </div>
+
+              </div>
+     
+        </div>
+      </div>
+          
+      </section>
+
+       <section class="page-section bg-ligth">
+
+              <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      
+                    <p class="texteInfo text-center"> Ce bien correspond t-il à vos attentes ? &nbsp; &nbsp;&nbsp; &nbsp;
+                      <a href="couponYes" ><input name="A" id="idYes" type="button" value="Yes" class="btn btn-success justify-content-center"></input></a>
+                      <a href="couponNo" ><input name="A" id="idNo" type="button" value="No" class="btn btn-danger justify-content-center"></input></a>
+                     </p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+{% endblock %}
+       

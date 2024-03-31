@@ -1,0 +1,74 @@
+{% extends "index.html" %}
+{% block body %}
+<!------------------------------------- Navigation --------------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            
+    <div class="container px-2 px-lg-2">
+        
+        <a class="navbar-brand" href="#page-top"><img class="logo" src="static/images/SmartInvest.png" alt="Logo"></a>
+       
+    </div>
+</nav>
+<br><br><br><br><br><br>
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">
+
+            <h2 class="mt-0">Rejoinez-nous !</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-5">Vous souhaitez avoir plus de visibilité pour acheter les biens ? Faites comme les 76 agences et 48 particuliers : confiez-nous vos biens et rejoinez-nous. <br>
+
+
+            Inscrivez-vous via le formulaire ci-dessous.</p>
+
+            {% if message %}
+               <p>{{ message }}</p> 
+            {% endif %}
+        </div>
+        
+    </div>
+             
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+        <div class="col-lg-6">
+            <form id="inscriptionForm" data-sb-form-api-token="API_TOKEN" method="post" action="/confirmation_inscription">
+                <!-- Name input-->
+                <h5 class="h5"> S'inscrire </h5>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nom" name="nom" type="text" placeholder="Entrer votre nom..." required/>
+                    <label for="nom">Nom : </label>
+                    <div class="invalid-feedback" data-sb-feedback="nom:required">Le Nom est obligatoire.</div>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="nom" name="prenom" type="text" placeholder="Entrer votre prénom..." required/>
+                    <label for="nom">Prénom : </label>
+                    <div class="invalid-feedback" data-sb-feedback="prenom:required">Le Nom est obligatoire.</div>
+                </div> 
+            
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="tele" name="tele" type="text" placeholder="Entrer votre nom..." required/>
+                    <label for="tele">Numero de telephone : </label>
+                    <div class="invalid-feedback" data-sb-feedback="tele:required">Le Numero de telephone est obligatoire.</div>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="email" name="email" type="text" placeholder="Entrer votre nom..." required/>
+                    <label for="email">Email : </label>
+                    <div class="invalid-feedback" data-sb-feedback="email:required">L'email est obligatoire.</div>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="password" name="password" type="text" placeholder="Entrer votre nom..." required/>
+                    <label for="password">Mot de passe : </label>
+                    <div class="invalid-feedback" data-sb-feedback="password:required">Le mot de passe est obligatoire.</div>
+                </div> 
+                
+              
+                <div class="text-center"> <input  type="submit" value="M'inscrire" class="btn btn-primary btn-xl col-lg-4 text-center justify-content-center"> </div>  
+            </form>
+
+            <br><br>
+            <p>Vous avez déjà un compte ? <a href="/connection"> Se connecter </a></p>
+              
+        </div>
+    </div>
+</div>
+{% endblock %}

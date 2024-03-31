@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Creative - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+{% block body %}
+        <!------------------------------------- Navigation --------------------------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            
+            <div class="container px-2 px-lg-2">
+                
+                <a class="navbar-brand" href="#page-top"><img class="logo" src="static/images/SmartInvest.png" alt="Logo"></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#procedure">Procédure</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formulaire">Trouve-le</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Nos analyses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#analyse_bien">Bien</a></li>
+                                <li><a class="dropdown-item" href="#analyse_quartier">Quartier</a></li>
+                            </ul>
+                            <li class="nav-item"><a class="nav-link" href="/connection">Déconnexion</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------------------------- Introduction------------------------------------------------------>
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">Smart Invest</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">Simple, efficace et intelligent. <br> Nous avons a coeur de vous accompagner.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!------------------------------------------PARTIE PROCEDURE--------------------------------------------->
+        <section class="page-section" id="procedure">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h4 class="mt-0">Bienvenue {{ nom }} !</h4>
+                        <br><br>
+                        <h2 class="mt-0">Les étapes à suivre</h2>
+                        <hr class="divider" /> <br>
+                    </div>
+
+                        <!--------------DEBUT LISTE------------------->
+                        <p><ol>
+
+                            <li class="h5"> Savoir où investir : recherche par quartier</li>
+                                                                
+                                <!--Tableau dans la liste-->
+
+                                <table class="mb-5">
+                                    <tr>
+                                        <td><img class="img" src="static/images/plan.png" alt="plan de Toulouse"></td>
+                                        <td class="col-lg-8 text-center"> <strong>Smart Invest</strong> travaille sur l'agglomération toulousaine. <br> 
+                                        En indiquant vos critères primordiaux, l'algorithme est capable de savoir quel est le meilleur endroit pour vous. <br>
+                                        <div class="text-muted">Quartiers des Carmes, du Capitole, de Jean-Jaurès...<br>Commune de Portet-sur-Garonne, Balma, Labège, Cugnaux...</div><br>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            <br>
+                            <li class="h5">Trouver le bien adapté selon le quartier préférentiel</li>
+
+                                <!--2ème tableau dans la liste-->
+
+                                <table class="mb-3 text-center">
+                                    <tr>Après avoir choisit le quartier, nous trouvons pour vous le bien idéal dans la zone géographique selectionnée.</tr>
+                                <br><br>
+                                    <tr>
+                                        <td><img class="imgQuartier" src="static/images/appart.jpg" alt="appart toulouse"></td>
+                                        <td><img class="imgQuartier" src="static/images/maison.jpg" alt="maison"></td>
+                                        <td><img class="imgQuartier" src="static/images/terrain.jpg" alt="terrain vierge"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-muted"> Appartements...</td>
+                                        <td class="text-muted"> Maisons...</td>
+                                        <td class="text-muted"> Terrains vierges...</td>
+                                    </tr>
+                                
+                                    </table>
+                        </ol></p> 
+                        <br><br>
+                        <a class="btn btn-primary btn-xl col-lg-4 text-center" href="#formulaire">Je trouve mon bien</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------- PARTIE FORMULAIRE POUR TROUVER LE BIEN--------------------->
+    <section class="page-section" id="formulaire">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Trouver votre bien idéal</h2>
+                        <hr class="divider" /> <br>
+                        <p class="small" style="color: #dc3545;"> <em>Les questions suivies d'un * sont obligatoires</em></p><br>
+                </div>
+
+           <!-----------FORMULAIRE ORIENTE QUARTIER------------> 
+            <form action="/RecupReponse" method="get">
+                <h5 class="h5"> 1. Je trouves mon quartier </h5>
+                <table>
+                    <tr>
+                        <td ><strong style="color: red;">* </strong>Nombre d'habitant : </td>
+                        <td><input id="jaugeA" name="jaugeA" type="range" step="1" min="2036" max="36304" value="10000" required> <span id="valeurAnnimation">10000</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: red;">* </strong>Nombre de resto à proximité : </td>
+                        <td><input id="jaugeS" name="jaugeS" type="range" step="1" min="0" max="58" value="20" required> <span id="valeurSecurité">20</span></td>
+                    </tr>
+                </table>  
+                     
+                <br>   
+                {% if lignes %}                  
+                Selon les données renseignées : vous devriez investir dans le(s) quartier(s) : 
+                    
+                        <strong>{{lignes[0][0]}}</strong>, {{ nom }} !
+                    {% endif %}
+                <br>  
+               
+               <input type="submit" value="Mon Quartier Idéal" class="btn btn-primary justify-content-center">
+                                            <br>
+            </form>
+
+                        <hr class="divider" /><br>
+
+            <!------------FORMULAIRE ORIENTE BIEN------------->
+            {% if maxnbpiece %}
+                <form method="GET" action="/RecupReponse2" >
+                    <h5 class="h5"> 2. Je trouves mon bien </h5>
+                    <label>Quartier(s) : </label>
+                        <input type="text" class="form-control form-little-squirrel-control" name="quartier" value="{% for ligne in lignes %}{{ ligne[0] }}{% endfor %}" readonly/>
+                    
+                        <br>
+                
+                    <label><strong style="color: red;">* </strong>Type de bien : </label>
+                        <select class="form-control form-little-squirrel-control" name="typeBien">
+                            {% for i in typeB %}
+                               <option>{{ i[0] }}</option>
+                            {% endfor %}
+                            </select><br>
+                            
+                    <label><strong style="color: red;">* </strong>Surface : </label>
+                          
+                          <input id="jaugeSurface" name="surface" type="range" step="10" min="{{minsurface}}" max="{{maxsurface}}" value="50" required> <span id="valeurSurface">30</span> m²
+                          <br><br>
+                    
+                    <label><strong style="color: red;">* </strong>Nombre de pièce : </label> 
+                          <select class="form-control form-little-squirrel-control" name="nbpiece">
+                           
+                            {% for i in range(1,maxnbpiece+1) %}
+                                <option>{{ i }}</option>
+                            
+                            {% endfor %}
+                            </select><br>
+                      
+                    <label><strong style="color: red;">* </strong>Budget : </label>   
+                          
+                        <input id="budget" name="budget" type="range" step="500" min="{{minprix}}" max="{{maxprix}}" value="200000" required> <span id="valeurBudget">200000</span> €
+                                <br>
+                        
+                        <br>
+
+                       &nbsp;&nbsp;<input class="btn btn-danger" type="reset" value="Réinitialiser" class="btn btn-danger btn-xl col-lg-4 text-center justify-content-center"> 
+                       <div class="text-center"> <input  type="submit" value="Mon bien" class="btn btn-primary btn-xl col-lg-4 text-center justify-content-center"> </div>                                    
+                </form>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+    <!-------------------- end of partie Formulaire--------------------------->
+        
+<!-- TEST SQL -->
+
+<!------------------------------ANALYSE --------------------------->
+<section class="page-section" id="analyse">
+    <div class="container px-3">
+        <div class="row gx-2 gx-lg-5 justify-content-center">
+            <div class="text-center">
+                
+                <h2 class="mt-0">Nos analyses générales</h2>
+                <p class="text-muted"> <i>Basé sur les avis de nos clients</i></p>
+            
+                <!-----------------------------------------------------ANALYSE DES BIENS -------------------------------------->
+                    <hr class="divider" />
+
+                    <table class="justify-content-center highlight-table mb-5 imgAppart" style="font-family: 'Arial Black', sans-serif; font-size: 24px;">
+                        <tr class="text-center">
+                            <td> Quartier le plus en vogue : {{liste_qr[0][0]}}</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td> Bien le plus en vogue : Le n°{{liste_br[0][0]}} -- {{liste_br[0][1]}} </td>
+                        </tr>
+                    </table>
+
+
+                    <div id="analyse_bien">
+                    <h5 class="h5 mb-3" > <u>Quelques analyses de biens </u> </h5>
+
+                    <p class="text-muted mt-5 mb-3"> Classification des biens en fonction de leur prix</p>
+                    <br>
+                    <div class="carte-container">
+                        {{ carte | safe }}
+                    </div>
+                    <br><br>
+                    <p class="text-muted mt-5 mb-3"> Classification des quartiers en fonction du nombre d'habitants par rapport à la moyenne </p>
+                    <br>
+                    <div class="carte-container">
+                        {{ carte2 | safe }}
+                    </div>
+                    <br><br>
+                    <p class="text-muted mt-5 mb-3"> Classification des quartiers en fonction du nombre de restaurants </p>
+                    <br>
+                    <div class="carte-container">
+                        {{ carte4 | safe }}
+                    </div>
+                    <br><br>
+                    <p class="text-muted mt-5 mb-3"> Classification des quartiers en fonction des commissariats </p>
+                    <br>
+                    <div class="carte-container">
+                        {{ carte3 | safe }}
+                    </div>
+                    <br><br>
+                    <!-------- Requete bien le mieux noté par quartier-------------------->
+                    <p class="text-muted mb-0"> Le bien le mieux noté par quartier </p>  
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            
+                                <table style="border-collapse: collapse;" class="table table-bordered">
+                                    <tr style="background-color: #f4623a;">
+                                        {% for m in meta_best %}
+                                        <th style="padding: 12px; text-align: center;">{{m[0]}}</th>
+                                        {% endfor %}
+                                    </tr>
+                        
+                                    {% for s in liste_best %}
+                                    <tr>
+                                        {% for i in s %}
+                                        <td style="padding: 8px; text-align: center;">{{i}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %} 
+                                </table>
+
+                        </div>
+                    </div>
+
+                    <!-------- Requete classer les bien en fonction du prix moyen du quartier-------------------->
+
+                    
+                    <br><br>
+                    <!-------- RESTITUTION TABLEAU DE REQUETE 3 -------------------->
+                    <p class="h5"> Pour chaque quartier, le meilleur bien rapport qualite prix </p>  
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            
+                                <table style="border-collapse: collapse;" class="table table-bordered">
+                                    <tr style="background-color: #f4623a;">
+                                        {% for m in meta_qp %}
+                                        <th style="padding: 12px; text-align: center;">{{m[0]}}</th>
+                                        {% endfor %}
+                                    </tr>
+                        
+                                    {% for s in liste_qp %}
+                                    <tr>
+                                        {% for i in s %}
+                                        <td style="padding: 8px; text-align: center;">{{i}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %} 
+                                </table>
+
+                        </div>
+                    </div>
+                </div>
+
+<!-----------------------------------------------------ANALYSE DU QUARTIER -------------------------------------->
+                    <hr class="divider" id="analyse_quartier"/> <br>
+                    <div >
+
+                    <h5 class="h5 mb-5" > <u>Quelques analyses du quartier </u> </h5>
+                    <!-------- RESTITUTION TABLEAU DE REQUETE 1 -------------------->
+                    <p class="h5"> Les quartiers animés </p>
+                    <p class="text-muted"> Nombre de bars & restaurants pour 1000 habitants </p>  
+                    <br>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <table style="border-collapse: collapse;" class="table table-bordered">
+                                    <tr style="background-color: #f4623a;">
+                                        {% for m in meta_clara %}
+                                        <th style="padding: 12px; text-align: center;">{{m[0]}}</th>
+                                        {% endfor %}
+                                    </tr>
+                        
+                                    {% for s in liste_clara %}
+                                    <tr>
+                                        {% for i in s %}
+                                        <td style="padding: 8px; text-align: center;">{{i}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %} 
+                                </table>
+                            </div>
+                        <div class="col-lg-6">
+                        <img src="{{ graph_image }}" alt="Graphique des quartiers" />
+                        </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    
+
+                    <br>
+
+                    
+
+                    <!-------- RESTITUTION TABLEAU DE REQUETE 4 -------------------->
+                    <p class="h5"> Les autres bien qui correspondent à vos critères </p>  
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            
+                                <table style="border-collapse: collapse;" class="table table-bordered">
+                                    <tr style="background-color: #f4623a;">
+                                        {% for m in meta_s %}
+                                        <th style="padding: 12px; text-align: center;">{{m[0]}}</th>
+                                        {% endfor %}
+                                    </tr>
+                        
+                                    {% for s in liste_s %}
+                                    <tr>
+                                        {% for i in s %}
+                                        <td style="padding: 8px; text-align: center;">{{i}}</td>
+                                        {% endfor %}
+                                    </tr>
+                                    {% endfor %} 
+                                </table>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        
+
+
+        <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img class="logoSponsors" src="static/images/Orpi.jpg" alt="Apple">
+                    </div>
+                    <div class="slide">
+                        <img class="logoSponsors" src="static/images/R.jpg" alt="AssoLyon">
+                    </div>
+                    <div class="slide">
+                        <img class="logoSponsors" src="static/images/Plaza.jpg" alt="mairie">
+                    </div>
+                    <div class="slide">
+                        <img class="logoSponsors" src="static/images/Era.png" alt="Dyson">
+                    </div>
+                    <div class="slide">
+                        <img class="logoSponsors" src="static/images/home.png" alt="Dyson">
+                    </div>
+                    <div class="slide">
+                        <img class="logoSponsors" src="static/images/OIP.jpg" alt="Dyson">
+                    </div>
+                     <div class="slide">
+                        <img class="logoSponsors" src="static/images/Adresse.jpg" alt="Dyson">
+                    </div>
+                    
+                    </div>     
+            </div>
+         
+
+
+        </section>
+
+        
+
+  
+        <!----------------------------------PARITE SPONSORS--------------------------------------->
+{% endblock %}
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Smart Invest</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+    
+</html>

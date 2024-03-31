@@ -1,0 +1,92 @@
+{% extends "index.html" %}
+{% block body %}
+     <!------------------------------------- Navigation --------------------------------------------------->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            
+        <div class="container px-2 px-lg-2">
+            
+            <a class="navbar-brand" href="#page-top"><img class="logo" src="static/images/SmartInvest.png" alt="Logo"></a>
+           
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">
+            <h2 class="mt-0">Rejoinez-nous !</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-5">Vous souhaitez avoir plus de visibilité pour acheter les biens ? Faites comme les 76 agences et 48 particuliers : confiez-nous vos biens et rejoinez-nous. <br></p>
+        </div>
+    </div>
+    {% if msg_noter %}
+        <p>{{ msg_noter }}</p>
+    
+        
+    {% endif %}
+
+    {% if msg_note %}
+    <p>{{ msg_note }}</p>
+    
+        
+    {% endif %}
+
+    {% if mes %}
+    <p>{{ mes }}</p>
+    
+        
+    {% endif %}
+
+    {% if msg_mdp %}
+    <p>{{ msg_mdp }}</p>
+    
+        
+    {% endif %}
+
+
+    {% if erreur %}
+    <p>{{ erreur }}</p>
+       
+        
+    {% endif %}
+    <br>
+
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+        <div class="col-lg-6">
+            <form id="inscriptionForm" data-sb-form-api-token="API_TOKEN" method="post" action="/verif_connection">
+                <!-- Name input-->
+                <h5 class="h5"> Se connecter : </h5>
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="email" name="email1" type="text" placeholder="Entrer votre nom..." required/>
+                    <label for="email1">Email</label>
+                    <div class="invalid-feedback" data-sb-feedback="email1:required">Le Email est obligatoire.</div>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="password" name="password1" type="password" placeholder="Entrer votre nom..." required />
+                    <label for="password1">Password</label>
+
+                    
+
+                    <div class="invalid-feedback" data-sb-feedback="password1:required">Le Password est obligatoire.</div>
+                </div> 
+                <button type="button" id="togglePassword" class="btn btn-sm btn-secondary">Voir le mot de passe</button>
+                <div class="text-center"> <input  type="submit" value="Me connecter" class="btn btn-primary btn-xl col-lg-4 text-center justify-content-center"> </div>  
+            </form>
+            <script>
+                const togglePassword = document.getElementById('togglePassword');
+                const passwordField = document.getElementById('password');
+            
+                togglePassword.addEventListener('click', function() {
+                    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordField.setAttribute('type', type);
+                    this.textContent = type === 'password' ? 'Voir le mot de passe' : 'Masquer le mot de passe';
+                });
+            </script>
+
+            <br><br>
+            <p>Pas encore inscrit ? : <a href="/inscription"> S'inscrire </a></p>
+              
+        </div>
+    </div>
+</div>
+{% endblock %}

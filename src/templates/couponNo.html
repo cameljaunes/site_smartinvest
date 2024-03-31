@@ -1,0 +1,38 @@
+{% extends "index.html" %}
+
+{% block body %}
+    <body>
+      <a class="navbar-brand" href="index"><img style="height: 13%;" src="static/images/SmartInvest.png" alt="Logo"></a>
+      <section id="coupon-message" class="page-section bg-ligth">
+        <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                      <img style="height: 10%;" src="static/secondChance.jpg"/> 
+                      <h2 class="mt-0" >  Laissez-nous une seconde chance, {{ nom }}</h2>
+                      <p class="text-muted"> Le bien proposé ne vous a pas convaincu ? </br> Jettez un oeil aux suggestions : </p>
+                        <hr class="divider mb-5" />    
+                        <div class=" text-center mt-0">
+                          <form action="couponYes" method="GET">
+                            <ul>
+                              {% for ligne in lignes[1:] %}
+                              <li style="list-style-type: none;">
+                                <input type="radio" name="choix" required />
+                                  <h5> Bien n°{{ligne[8]}}: {{ ligne[5] }} T{{ ligne[0] }} à {{ ligne[1] }}</h5>
+                                  <p class="text-center">Prix : {{ ligne[3] }} € | Surface : {{ ligne[2] }}m² </p>
+                                  <p class="text-center"><u>Contact :</u> {{ ligne[6] }} | +33{{ ligne[7] }}</p></br>
+                              </li>
+                              {% endfor %}
+                              <li style="list-style-type: none;"> <input type="submit" class="btn btn-primary btn-xl text-center justify-content-center" value="Confirmez mon choix"/> &nbsp; &nbsp; <a href='/dommage'> <input type="button" class="btn btn-danger btn-xl text-center justify-content-center" value="Aucun bien ne me convient"/></a> </li>
+                            
+                            </ul>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </body>
+                          
+                    
+      
+{% endblock %}
